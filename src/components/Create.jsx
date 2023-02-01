@@ -71,7 +71,7 @@ function Create() {
 
   return ( 
   <Layout>
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} style={{display:"flex", justifyContent:"space-evenly", alignItems:"center", flexDirection:"column", height:"50vh"}}>
 
       <div>
         <div>Title</div>
@@ -99,7 +99,7 @@ function Create() {
         <input type="text" name="intro" value={intro} onChange={handleChange}/>
       </div>
 
-      <div>
+      <div style={{display:"flex"}}>
         <div>Completado</div>
         <input type="checkbox" name="completed" value={completed} onChange={handleChange}/>
       </div>
